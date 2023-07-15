@@ -18,3 +18,20 @@ body {
   font-size: 18px;
   background: var(--bg-color)
 }
+.Container_Primary{
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 0.0625rem solid rgba(243,247,250,.05);
+  border-radius: 0.55rem;
+}
+.box-shadow {
+  box-shadow: 5px 5px 13px #0f1e29,
+              -5px -5px 13px #21445f;
+}
