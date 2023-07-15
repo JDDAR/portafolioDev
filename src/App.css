@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Urbanist',
+    sans-serif;;
+  src: url(../vite.config.js );
+}
+
+:root {
+  --bg-color: #183144;
+}
+
+body {
+  font-size: 18px;
+  background: var(--bg-color)
+}
