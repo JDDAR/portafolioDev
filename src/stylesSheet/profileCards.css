@@ -1,4 +1,38 @@
+.content_User {
+    display: flex;
+}
 .img_profile {
     width: 100%;
-    margin: 20px;
+    height: auto;
+}
+.desc_User {
+    width: auto;
+}
+
+.img_profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile_icon ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+
+.desc_User span {
+    color: var(--color-subtexr);
+}
+
+@media screen and (max-width: 320px) {
+    .content_User {
+        min-width: 320px;
+        display: block;
+    }
+
+    .img_profile {
+        width: 100%;
+    }
 }

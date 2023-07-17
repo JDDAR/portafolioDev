@@ -5,33 +5,212 @@
 }
 
 @font-face {
-  font-family: 'Urbanist',
-    sans-serif;;
-  src: url(../vite.config.js );
+  font-family: Urbanist, sans-serif;
+  src: url(../src/fonts/Urbanist-Light.ttf );
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Urbanist, sans-serif;
+  src: url(../src/fonts/Urbanist-Regular.ttf );
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Urbanist, sans-serif;
+  src: url(../src/fonts/Urbanist-SemiBold.ttf );
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Urbanist, sans-serif;
+  src: url(../src/fonts/Urbanist-Bold.ttf );
+  font-weight: 700;
 }
 
 :root {
   --bg-color: #183144;
+  --color-subtexr: #0da9c7;
+  --color-text: #b8b8b8;
+
+  --margin-bottom: 6.25rem;
 }
 
 body {
-  font-size: 18px;
-  background: var(--bg-color)
-}
-.Container_Primary{
-  width: 80%;
-  margin: auto;
+  background: var(--bg-color);
+  font-family: Urbanist, sans-serif;
+  color: var(--color-text);
 }
 
-.card {
+.Container_Primary {
+  width: 70%;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.estructure {
+  padding: 20px;
+  background-color: #c5b21e;
+  cursor: pointer;
+  width: 10%;
+  color: #0f1e29;
+}
+
+.estructure.EstructureT2 {
+  background-color: #0dc1c7;
+  width: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+.estructureUser {
+  width: auto;
+  height: 100vh;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'data_user data_user data_user'
+    'skills_user blog_user blog_user'
+    'Hobbies_user blog_user blog_user'
+    'Hobbies_user experiences_user experiences_user'
+    'projects_user projects_user projects_user';
+  transition: 0.5s ease-in-out;
+
+}
+
+.estructureUser.EstructureT2 {
+  width: auto;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'data_userT2 skills_userT2 skills_userT2'
+    'data_userT2 experiences_userT2 experiences_userT2'
+    'blog_userT2 experiences_userT2 experiences_userT2'
+    'Hobbies_userT2 experiences_userT2 experiences_userT2'
+    'Hobbies_userT2 projects_userT2 projects_userT2';
+  transition: 0.5s ease-in-out;
+}
+
+
+/* DataUser */
+.data_user {
+  grid-area: data_user;
+}
+.data_user.EstructureT2 {
+  grid-area: data_userT2;
+}
+.data_user.EstructureT2 > section > div.content_User {
   display: flex;
   flex-direction: column;
-  word-wrap: break-word;
-  background-clip: border-box;
+}
+
+/* Skillis User */
+.skills_user {
+  grid-area: skills_user;
+  background: #c79c0d;
+}
+
+.skills_user.EstructureT2 {
+  grid-area: skills_userT2;
+  background: #c79c0d;
+}
+
+/* blog user */
+.blog_user {
+  grid-area: blog_user;
+  background: #c70d0d;
+}
+
+.blog_user.EstructureT2 {
+  grid-area: blog_userT2;
+  background: #c70d0d;
+}
+
+/* Hobbies user */
+.hobbies_user {
+  grid-area: Hobbies_user;
+  background: #3b0dc7;
+}
+
+.hobbies_user.EstructureT2 {
+  grid-area: Hobbies_userT2;
+  background: #3b0dc7;
+}
+
+/* experence user */
+.experiences_user {
+  grid-area: experiences_user;
+  background: #c70d9c;
+}
+
+.experiences_user.EstructureT2 {
+  grid-area: experiences_userT2;
+  background: #c70d9c;
+}
+
+/* project user */
+.projects_user {
+  grid-area: projects_user;
+  background: #0dc1c7;
+}
+
+.projects_user.EstructureT2 {
+  grid-area: projects_userT2;
+  background: #0dc1c7;
+}
+
+
+
+.card {
+
   border: 0.0625rem solid rgba(243,247,250,.05);
   border-radius: 0.55rem;
 }
+
 .box-shadow {
   box-shadow: 5px 5px 13px #0f1e29,
-              -5px -5px 13px #21445f;
+    -5px -5px 13px #21445f;
+}
+
+.rounded {
+  border-radius: 0.55rem;
+}
+
+.pad-4 {
+  padding: 1.5rem
+}
+
+.pad-2 {
+  padding: 1.5rem 0;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+p,
+h3 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-bottom: 1rem;
+}
+
+.p-text {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-subtexr);
 }
