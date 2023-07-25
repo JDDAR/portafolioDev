@@ -1,13 +1,34 @@
+/* DataUser **********************************************/
+.data_user {
+    grid-area: data_user;
+}
+
+.data_user.EstructureT2 {
+    grid-area: data_userT2;
+
+}
+
+.data_user.EstructureT2>section>div.content_User {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+
+.container-data.EstructureT2>section.content_User {
+    flex-direction: column;
+}
+.container-data.EstructureT2>section.content_User>div.img_profile {
+    width: 100%;
+}
 .content_User {
     display: flex;
 }
 .img_profile {
-    width: 100%;
+    width: 40%;
     height: auto;
 }
-.desc_User {
-    width: auto;
-}
+
 
 .img_profile img {
     width: 100%;

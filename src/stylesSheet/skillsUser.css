@@ -1,0 +1,48 @@
+/* Skillis User **********************************************/
+.skills_user {
+    grid-area: skills_user;
+
+}
+
+.skills_user.EstructureT2 {
+    grid-area: skills_userT2;
+
+}
+.progress_skills {
+    position: relative;
+}
+
+.progress_Info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    height: 0.6rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.BarS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+    height: 0.6rem;
+    background: var(--color-subtexr);
+    border-radius: 50px;
+    animation: barAnimate 3s ease 0s 1 normal none running;
+}
+
+@keyframes barAnimate {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

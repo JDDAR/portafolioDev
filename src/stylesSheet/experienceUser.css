@@ -1,0 +1,44 @@
+/* experence user **************************************************/
+.experiences_user {
+    grid-area: experiences_user;
+}
+.experiences_user.EstructureT2 {
+    grid-area: experiences_userT2;
+
+}
+.section-experience {
+    display: flex;
+    gap: 25px;
+}
+.content_experience {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.section-experience.EstructureT2 {
+    flex-direction: column;
+}
+
+.section-experience.EstructureT2>section.content_experience>div.logo_experience {
+    width: 40%;
+}
+.logo_experience {
+    width: 15%;
+}
+
+.logo_experience img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.data_experience span {
+    font-size: 12px;
+}
+
+.data_experience p {
+    color: var(--color-subtexr);
+    font-size: 18px;
+    line-height: 2.5rem;
+}
